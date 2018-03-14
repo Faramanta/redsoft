@@ -364,6 +364,15 @@ body {
   border: 1px solid #ecf1f5;
   border-radius: 5px;
   text-align: left;
+  
+  &.active {
+    background: #ecf1f5;
+    box-shadow: 0 5px 30px -1px rgba(0, 0, 0, 0.2);
+  }
+  &:hover {
+    background: #ecf1f5;
+    box-shadow: 0 5px 30px -1px rgba(0, 0, 0, 0.2);
+  }
   &.arrow {
     width: 60px;
     height: 60px;
@@ -371,10 +380,10 @@ body {
     border-radius: 50%;
     background: url(../images/slider-arrow.png) no-repeat center;
     cursor: pointer;
-  }
-  &.active {
-    background: #ecf1f5;
-    box-shadow: 0 5px 30px -1px rgba(0, 0, 0, 0.2);
+    &:hover {
+      box-shadow: none;
+      background: #ecf1f5 url(../images/slider-arrow.png) no-repeat center;
+    }
   }
 }
 
@@ -392,4 +401,53 @@ body {
   &.black {
     color: $black;
   }
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.left-sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+}
+
+.hotel__block {
+  display:  inline-block;
+  vertical-align: top;
+  width: calc(100% - 400px);
+}
+
+.map__block {
+  position: relative;
+  display: block;
+  background: url(../images/map.png) ;
+  height: 100px;
+  border-radius: 20px 20px 0 0;
+  padding: 40px 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.map__cnt {
+  color: $blue;
+  font-size: 18px;
+  font-family: 'FreeSetBold', sans-serif;
+}
+
+.map__btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 21px 0;
+  width: 160px;
+  background: linear-gradient(#f66229, #f24a1f);
+  border-radius: 25px;
+  border: none;
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'FreeSetBold', sans-serif;
 }
