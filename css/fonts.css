@@ -1,18 +1,24 @@
 @font-face {
-    font-family: 'PT Mono';
-    src: url('../fonts/PTM55FT.ttf');
+    font-family: 'FreeSetBold';
+    src: url('../fonts/FreeSetBoldC.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'PT Sans';
-    src: url('../fonts/PTSans/PT_Sans-Web-Regular.ttf');
+    font-family: 'FreeSet';
+    src: url('../fonts/FreeSetC.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'PT Sans bold';
-    src: url('../fonts/PTSans/PT_Sans-Web-Bold.ttf');
+    font-family: 'FreeSetItalic';
+    src: url('../fonts/FreeSetC-Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FreeSetLight';
+    src: url('../fonts/FreeSetLightC.otf');
     font-weight: normal;
     font-style: normal;
 }

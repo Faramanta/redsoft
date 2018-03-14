@@ -4,12 +4,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet/less" href="css/style.less">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>RedSoft</title>
 </head>
 <body>
 
+<header class="header">
+    <div class="header__top">
+        <div class="container clearfix">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+
+            <div class="header__region">
+                <p class="cnt">Ваш регион: <a class="link">Москва</a></p>
+            </div>
+
+            <div class="header__right-block">
+                <div class="header__phone-block">
+                    <p class="phone__cnt">8 (800) 700-17-71</p>
+                </div>
+
+                <div class="header__user-block">
+                    <div class="header__compare">
+                        <a href="#" class="header__btn">
+                            <span class="header__btn-img"></span>
+                            <div class="red-num">3</div>
+                            <span class="header__btn-cnt">Сравнить</span>
+                        </a>
+                    </div>
+
+                    <div class="header__user">
+                        <a href="#" class="header__btn">
+                            <span class="header__btn-img"></span>
+                            <span class="header__btn-cnt">Мой аккаунт</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__nav">
+        <div class="container">
+            <ul class="header-nav__list">
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link active">Туры</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Отели</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Авиабилеты</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Круизы</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Комбитуры</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Экскурсии</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Страны</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Виды отдыха</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Услуги</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Акции</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__link">Как купить</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div class="container">
+        <div class="filter">
+            <div class="filter-in">
+                <div class="filter__field">
+                    <input class=" filter__inp" placeholder="Выберите город, страну">
+                </div>
+                <div class="filter__field ">
+                    <input type='text' class="filter__inp calendar datepicker-here" placeholder="Заезд" />
+                </div>
+                <div class="filter__field">
+                    <input class=" filter__inp" placeholder="7 ночей">
+                    <div class="red-num ovale">&plusmn;2</div>
+                </div>
+                <div class="filter__field">
+                    <div class="filter__guest">
+                        <span class="guest adult"></span>
+                        <span class="guest adult adult--grey"></span>
+                        <span class="guest child"></span>
+                        <span class="guest child"></span>
+                    </div>
+                </div>
+                <div class="filter__field">
+                    <input class=" filter__inp" placeholder="1 номер">
+                </div>
+                <div class="filter__field field__btn">
+                    <button class="filter__btn">Подобрать отель</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider__item">
+                <p class="slider__cnt">Январь</p>
+                <p class="slider__cnt slider__cnt--16 bold black">от 76 132 руб.</p>
+                <p class="slider__cnt">7 ночей</p>
+            </div>
+
+            <div class="slider__item">
+                <p class="slider__cnt">Февраль</p>
+                <p class="slider__cnt slider__cnt--16 bold black">от 56 132 руб.</p>
+                <p class="slider__cnt">5 ночей</p>
+            </div>
+
+            <div class="slider__item active">
+                <p class="slider__cnt">Март</p>
+                <p class="slider__cnt slider__cnt--16 bold black">от 123 450 руб.</p>
+                <p class="slider__cnt">14 ночей</p>
+            </div>
+
+            <div class="slider__item">
+                <p class="slider__cnt">Апрель</p>
+                <p class="slider__cnt slider__cnt--16 bold black">от 76 132 руб.</p>
+                <p class="slider__cnt">7 ночей</p>
+            </div>
+
+            <div class="slider__item">
+                <p class="slider__cnt">Май</p>
+                <p class="slider__cnt slider__cnt--16 bold black">от 56 132 руб.</p>
+                <p class="slider__cnt">5 ночей</p>
+            </div>
+
+            <div class="slider__item arrow"></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/datepicker.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 <script>
 
