@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/sumoselect.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>RedSoft</title>
@@ -120,6 +122,8 @@
         </div>
 
         <div class="slider">
+            <div class="slider__item arrow arrow--left"></div>
+
             <div class="slider__item">
                 <p class="slider__cnt">Январь</p>
                 <p class="slider__cnt slider__cnt--16 bold black">от 76 132 руб.</p>
@@ -151,10 +155,58 @@
             </div>
 
             <div class="slider__item arrow"></div>
+
         </div>
 
-        <div class="content">
-            <div class="left-sidebar"></div>
+        <div class="content clearfix">
+            <div class="left-sidebar">
+                <div class="left-filter">
+                    <div class="left-filter__header">
+                        <p class="left-filter__ttl">Смотреть выбранные фильтры</p>
+                    </div>
+
+                    <div class="left-filter__section">
+                        <p class="left-filter__ttl2">Стоимость (руб.) </p>
+                        <div class="left-filter__section-in cost-section">
+                            <div class="cost__inp-block">
+                                <input type="text" id="amount1" class="left-filter__inp cost__inp">
+                                <div class="inp-line"></div>
+                                <input type="text" id="amount2" class="left-filter__inp cost__inp">
+                            </div>
+
+                            <div id="slider-range"></div>
+                        </div>
+                    </div>
+
+                    <div class="left-filter__section">
+                        <p class="left-filter__ttl2">Выбор отеля:</p>
+                        <div class="left-filter__section-in cost-section">
+                            <div class="left-filter__inp SumoSelect " >
+                                <select name="hotel" >
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                    <option value="Ярославль">Ярославль</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left-filter__section">
+                        <p class="left-filter__ttl2">Тип отеля:</p>
+                        <div class="left-filter__section-in cost-section">
+                            <div class="left-filter__inp SumoSelect " >
+                                <select multiple="multiple" name="hotelType" >
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                    <option value="Ярославль">Ярославль</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="hotel__block">
                 <div class="map__block">
@@ -176,12 +228,29 @@
 
 
 <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="js/vendor/datepicker.min.js"></script>
+<script type="text/javascript" src="js/vendor/SumoSelect/js/jquery.sumoselect.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
-
-
+    $( function() {
+        $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 800,
+            values: [ 0, 545 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                $( "#amount1" ).val( ui.values[ 0 ] );
+                $( "#amount2" ).val( ui.values[ 1 ] );
+            }
+        });
+        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        $( "#amount1" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+        $( "#amount2" ).val( $( "#slider-range" ).slider( "values", 1 ) );
+    } );
 </script>
 
 </body>

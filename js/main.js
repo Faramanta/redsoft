@@ -1,3 +1,4 @@
 $(document).ready(function(){
-    $('select[name="ct"]').SumoSelect();
+    $('select[name="hotelType"]').SumoSelect();
+    $('select[name="hotel"]').SumoSelect();
 });
