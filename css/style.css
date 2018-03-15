@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'FreeSetBold';
   src: url("../fonts/FreeSetBoldC.otf");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'FreeSet';
@@ -12,10 +12,15 @@
   font-family: 'FreeSetItalic';
   src: url("../fonts/FreeSetC-Italic.otf");
   font-weight: normal;
-  font-style: normal; }
+  font-style: italic; }
 @font-face {
   font-family: 'FreeSetLight';
   src: url("../fonts/FreeSetLightC.otf");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpiumNew';
+  src: url("../fonts/OpiumNewC.otf");
   font-weight: normal;
   font-style: normal; }
 ::-webkit-input-placeholder {
@@ -245,7 +250,10 @@ body {
     color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'FreeSetBold', sans-serif; }
+    font-family: 'FreeSetBold', sans-serif;
+    outline: none; }
+    .filter__field .filter__btn:hover {
+      background: linear-gradient(#007f88, #00a0a7); }
 
 .filter__inp {
   position: relative;
@@ -375,12 +383,15 @@ body {
   padding: 21px 0;
   width: 160px;
   background: linear-gradient(#f66229, #f24a1f);
-  border-radius: 25px;
+  border-radius: 28px;
   border: none;
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: 'FreeSetBold', sans-serif; }
+  font-family: 'FreeSetBold', sans-serif;
+  outline: none; }
+  .map__btn:hover {
+    background: linear-gradient(#f24a1f, #f66229); }
 
 .left-filter {
   border-radius: 20px 20px 0 0;
@@ -504,15 +515,93 @@ body {
   font-size: 16px;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: 'FreeSetBold', sans-serif; }
+  font-family: 'FreeSetBold', sans-serif;
+  outline: none; }
   .left-filter__btn:hover {
     background: linear-gradient(#f24a1f, #f66329); }
 
 .left-monitoring {
   margin-top: 30px;
   background: #ecf1f5;
-  padding: 40px 0;
+  padding: 40px;
   text-align: center;
   box-shadow: 0 7px 29px -9px rgba(0, 0, 0, 0.5); }
+
+.left-monitoring__ttl {
+  font-size: 24px;
+  font-family: 'OpiumNew', sans-serif;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px; }
+
+.cbx-block {
+  position: relative;
+  margin-top: 25px;
+  display: block;
+  width: auto; }
+
+.cbx {
+  display: none; }
+
+.cbx + .label-cbx {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-left: 15px;
+  text-align: left; }
+
+.cbx + .label-cbx::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px; }
+
+.cbx:checked + .label-cbx::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 2px;
+  top: 3px;
+  left: 3px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-45deg); }
+
+.cbx:checked + .label-cbx::before {
+  background: #7dc855; }
+
+input:checked + .label-cbx {
+  color: #000; }
+
+.cbx-cnt {
+  display: inline-block;
+  vertical-align: top;
+  color: #777777;
+  font-size: 11px;
+  font-family: 'FreeSet', sans-serif; }
+
+.left-monitoring__btn {
+  background: linear-gradient(#00a0a7, #007f88);
+  padding: 15px 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'FreeSetBold', sans-serif;
+  border: none;
+  border-radius: 25px;
+  margin-top: 28px;
+  box-shadow: 0 8px 21px -8px rgba(0, 143, 151, 0.5);
+  outline: none;
+  cursor: pointer; }
+  .left-monitoring__btn:hover {
+    background: linear-gradient(#007f88, #00a0a7); }
 
 /*# sourceMappingURL=style.css.map */
