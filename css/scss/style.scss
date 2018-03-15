@@ -561,3 +561,73 @@ body {
   border: 1px solid #d8d8d8;
 }
 
+.SumoSelect {
+  &:focus {
+    .CaptionCont {
+      box-shadow: none;
+      border-color: transparent;
+    }
+  }
+  &:hover {
+    .CaptionCont {
+      box-shadow: none;
+      border-color: transparent;
+    }
+  }
+  &.open {
+    .CaptionCont {
+      box-shadow: none;
+      border-color: transparent;
+    }
+  }
+  .CaptionCont {
+    height: 27px;
+    span {
+      font-size: 14px;
+      color: #777777;
+      font-family: 'FreeSet', sans-serif;
+    }
+    label {
+      width: 15px;
+      i {
+        background-image: url("../images/filter-arrow.png");
+      }
+    }
+  }
+  .optWrapper {
+    font-size: 14px;
+    color: #777777;
+    font-family: 'FreeSet', sans-serif;
+  }
+}
+
+.SelectBox {
+  padding: 5px 0;
+}
+
+
+.left-filter__btn {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(#f66329, #f24a1f);
+  padding: 30px 0;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'FreeSetBold', sans-serif;
+  &:hover {
+    background: linear-gradient(#f24a1f, #f66329);
+  }
+}
+
+.left-monitoring {
+  margin-top: 30px;
+  background: #ecf1f5;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 7px 29px -9px rgba(0, 0, 0, 0.5);
+}
