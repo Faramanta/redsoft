@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/datepicker.min.css">
     <link rel="stylesheet" href="css/sumoselect.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>RedSoft</title>
@@ -288,6 +289,543 @@
                 <div class="map__block">
                     <p class="map__cnt">Посмотрите все предложенные варианты на карте</p>
                     <button class="map__btn">Смотреть</button>
+                </div>
+
+                <div class="sorter">
+                    <div class="sorter__item">
+                        <p class="sorter__cnt">Сортировать по:</p>
+                    </div>
+                    <div class="sorter__item">
+                        <a href="#" class="sorter__cnt sorter__cnt-icon recommend active js-sorter-link">Рекомендуемые</a>
+                    </div>
+                    <div class="sorter__item">
+                        <a href="#" class="sorter__cnt sorter__cnt-icon price js-sorter-link">Цена</a>
+                    </div>
+                    <div class="sorter__item">
+                        <a href="#" class="sorter__cnt sorter__cnt-icon star js-sorter-link">Звезды</a>
+                    </div>
+                    <div class="sorter__item">
+                        <a href="#" class="sorter__cnt sorter__cnt-icon rating js-sorter-link">Рейтинг</a>
+                    </div>
+                    <div class="sorter__item">
+                        <p class="sorter__cnt show">Показывать:</p>
+                        <div class="sorter__inp SumoSelect " >
+                            <select name="sorter" >
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel__list">
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/calaFont.png" class="hotel__img">
+                                <div class="sale__block hidden">-25%</div>
+                                <div class="note__block ">Мало мест</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Cala Font 4<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Praterstrasse 72, Центр Вены (4,7 км)</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item food-covered"></div>
+                                    <div class="hotel-service__item pawprint"></div>
+                                    <div class="hotel-service__item bell-boy hidden"></div>
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__old-price">155 000 р.</p>
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/IberostarPlayadeMuro.png" class="hotel__img">
+                                <div class="sale__block ">-25%</div>
+                                <div class="note__block ">Рекомендуем</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Iberostar Playa de Muro 3<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--grey"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Испания, Коста-Даурада</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item bell-boy "></div>
+                                    <div class="hotel-service__item pawprint "></div>
+                                    <div class="hotel-service__item food-covered hidden"></div>
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/calaFont2.png" class="hotel__img">
+                                <div class="sale__block ">-25%</div>
+                                <div class="note__block ">Мало мест</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Cala Font 4<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Испания, Коста-Даурада</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item bell-boy "></div>
+                                    <div class="hotel-service__item pawprint "></div>
+                                    <div class="hotel-service__item food-covered hidden"></div>
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__old-price">155 000 р.</p>
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-price__block">
+                        <p class="best-price__cnt">Узнайте лучшие цены
+                            на избранные отели</p>
+                        <button class="best-price__btn">УЗНАТЬ ЦЕНЫ</button>
+                    </div>
+
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/IberostarPlayadeMuro2.png" class="hotel__img">
+                                <div class="sale__block ">-25%</div>
+                                <div class="note__block ">Рекомендуем</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Iberostar Playa de Muro 3<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Испания, Коста-Даурада</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item bell-boy "></div>
+                                    <div class="hotel-service__item pawprint "></div>
+                                    <div class="hotel-service__item food-covered hidden"></div>
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__old-price">155 000 р.</p>
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/calaFont3.png" class="hotel__img">
+                                <div class="sale__block ">-25%</div>
+                                <div class="note__block ">Мало мест</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Cala Font 4<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Испания, Коста-Даурада</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item bell-boy "></div>
+                                    <div class="hotel-service__item pawprint "></div>
+                                    <div class="hotel-service__item food-covered hidden"></div>
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__old-price">155 000 р.</p>
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/IberostarPlayadeMuro3.png" class="hotel__img">
+                                <div class="sale__block ">-25%</div>
+                                <div class="note__block ">Рекомендуем</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Iberostar Playa de Muro 3<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Испания, Коста-Даурада</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item food-covered"></div>
+                                    <div class="hotel-service__item pawprint "></div>
+                                    <div class="hotel-service__item bell-boy hidden"></div>
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__old-price">155 000 р.</p>
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel__item">
+                        <div class="hotel__item-in">
+                            <div class="hotel__col">
+                                <img src="images/calaFont5.png" class="hotel__img">
+                                <div class="sale__block ">-25%</div>
+                                <div class="note__block ">Мало мест</div>
+                            </div>
+
+                            <div class="hotel__col">
+                                <h3 class="hotel__name">Cala Font 4<i class="fa fa-star"></i></h3>
+                                <div class="card__block">
+                                    <img src="images/visa.png" class="card__img">
+                                </div>
+                                <p class="hotel__rating">Оценка 8,7 из 10
+                                    <span class="blue">
+                                        (<a href="#" class="hotel__rating-link">89 отзывов</a>)
+                                    </span>
+                                    <span class="stars">
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                        <i class="fa fa-star star--gold"></i>
+                                    </span>
+                                </p>
+
+                                <p class="hotel__place">Испания, Коста-Даурада</p>
+
+                                <div class="hotel__service-block">
+                                    <div class="hotel-service__item no-smoking"></div>
+                                    <div class="hotel-service__item food-covered"></div>
+                                    <div class="hotel-service__item pawprint "></div>
+                                    <div class="hotel-service__item bell-boy hidden"></div>
+
+                                    <div class="hotel-service__item wifi"></div>
+                                </div>
+
+                                <div class="hotel__info-block">
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">7 ночей</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">Аппартаменты</p>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__info-row">
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">2 ADL</p>
+                                        </div>
+                                        <div class="hotel__info-col">
+                                            <p class="hotel__info-cnt">RO</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hotel__price-block">
+                                    <p class="hotel__old-price">155 000 р.</p>
+                                    <p class="hotel__price">от 125 000 р.</p>
+                                    <button class="hotel__btn">Выбрать</button>
+                                    <div class="cbx-block ">
+                                        <input type="checkbox" name="compareHotel" class="cbx" id="compareHotel" >
+                                        <label class="label-cbx" for="compareHotel">
+                                            <span class="cbx-cnt">Сравнить отели</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paginator">
+                        <span class="paginator__cnt">Страница:</span>
+                        <a href="#" class="paginator__cnt">1</a>
+                        <span class="paginator__cnt active">2</span>
+                        <a href="#" class="paginator__cnt">3</a>
+                        <a href="#" class="paginator__cnt">4</a>
+                        <span class="paginator__cnt">...</span>
+                        <a href="#" class="paginator__cnt">52</a>
+                        <a href="#" class="paginator__cnt next">Следующая</a>
+                    </div>
                 </div>
             </div>
         </div>
